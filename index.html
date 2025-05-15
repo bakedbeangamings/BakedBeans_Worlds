@@ -20,6 +20,8 @@
       min-height: 100vh;
       align-items: center;
       justify-content: center;
+      padding: 0 1rem;
+      box-sizing: border-box;
     }
     header {
       padding: 1rem;
@@ -29,6 +31,20 @@
       font-weight: bold;
       font-family: 'Treasure Map Deadhand', cursive;
       user-select: none;
+    }
+    .welcome-message {
+      max-width: 900px;
+      background: rgba(0, 0, 0, 0.6);
+      border: 3px solid #7c5e29;
+      border-radius: 12px;
+      padding: 20px;
+      margin-bottom: 1rem;
+      font-size: 1.2rem;
+      line-height: 1.5;
+      text-shadow: 1px 1px 2px #000;
+      user-select: none;
+      white-space: pre-line;
+      font-family: 'Courier New', Courier, monospace;
     }
     .twitch-container {
       margin-top: 1rem;
@@ -60,6 +76,16 @@
 <body>
   <header>BakedBeans_Worlds</header>
 
+  <div class="welcome-message">
+    🌍 Welcome to BakedBeans_Worlds! 🫘<br />
+    Hey there, survivor! 👋<br />
+    We’re thrilled to have you join our world. Whether you're here to build, battle, explore, or just crack open a can of beans by the fire — you're now part of a growing, gritty, and fun-loving community.<br /><br />
+    💬 Say hello, team up with others, and don’t be afraid to ask questions.<br />
+    🧭 Explore. Survive. Thrive.<br />
+    🔥 And remember — the beans are always warm, but the world is not.<br /><br />
+    Let the adventure begin!
+  </div>
+
   <div class="twitch-container">
     <iframe
       src="https://player.twitch.tv/?channel=baked_bean_gaming&parent=bakedbeangamings.github.io"
@@ -72,3 +98,4 @@
   <footer>Powered by Twitch</footer>
 </body>
 </html>
+
