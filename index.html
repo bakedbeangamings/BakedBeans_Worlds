@@ -5,11 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>BakedBeans_Worlds</title>
   <style>
-    /* Survival-themed style with woods background */
     body {
       margin: 0;
       font-family: 'Courier New', Courier, monospace;
-      /* Woods background image with dark overlay */
       background: 
         linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
         url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1350&q=80') no-repeat center center fixed;
@@ -19,12 +17,12 @@
       flex-direction: column;
       min-height: 100vh;
       align-items: center;
-      justify-content: center;
-      padding: 0 1rem;
+      justify-content: flex-start;
+      padding: 2rem 1rem 2rem 1rem;
       box-sizing: border-box;
     }
     header {
-      padding: 1rem;
+      padding: 1rem 0;
       font-size: 2.5rem;
       letter-spacing: 3px;
       text-shadow: 2px 2px 5px #000;
@@ -32,36 +30,40 @@
       font-family: 'Treasure Map Deadhand', cursive;
       user-select: none;
     }
-    .welcome-message {
-      max-width: 900px;
-      background: rgba(0, 0, 0, 0.6);
-      border: 3px solid #7c5e29;
-      border-radius: 12px;
-      padding: 20px;
-      margin-bottom: 1rem;
-      font-size: 1.2rem;
-      line-height: 1.5;
-      text-shadow: 1px 1px 2px #000;
-      user-select: none;
-      white-space: pre-line;
-      font-family: 'Courier New', Courier, monospace;
-    }
     .twitch-container {
-      margin-top: 1rem;
       box-shadow: 0 0 20px 3px #7c5e29;
       border: 4px solid #7c5e29;
       border-radius: 10px;
       overflow: hidden;
       width: 90vw;
       max-width: 900px;
-      height: 506px; /* 16:9 ratio */
+      height: 506px;
       background: rgba(0, 0, 0, 0.3);
+      position: relative;
+      z-index: 5;
     }
     iframe {
       width: 100%;
       height: 100%;
       border: none;
       display: block;
+    }
+    .welcome-message {
+      max-width: 900px;
+      background: rgba(0, 0, 0, 0.8);
+      border: 3px solid #7c5e29;
+      border-radius: 12px;
+      padding: 20px;
+      margin-top: 1.5rem;
+      font-size: 1.2rem;
+      line-height: 1.5;
+      text-shadow: 1px 1px 2px #000;
+      user-select: none;
+      white-space: pre-line;
+      font-family: 'Courier New', Courier, monospace;
+      color: #e0d7c6;
+      position: relative;
+      z-index: 10;
     }
     footer {
       margin-top: auto;
@@ -76,6 +78,15 @@
 <body>
   <header>BakedBeans_Worlds</header>
 
+  <div class="twitch-container">
+    <iframe
+      src="https://player.twitch.tv/?channel=baked_bean_gaming&parent=bakedbeangamings.github.io"
+      allowfullscreen
+      scrolling="no"
+      frameborder="0"
+    ></iframe>
+  </div>
+
   <div class="welcome-message">
     🌍 Welcome to BakedBeans_Worlds! 🫘<br />
     Hey there, survivor! 👋<br />
@@ -86,16 +97,6 @@
     Let the adventure begin!
   </div>
 
-  <div class="twitch-container">
-    <iframe
-      src="https://player.twitch.tv/?channel=baked_bean_gaming&parent=bakedbeangamings.github.io"
-      allowfullscreen
-      scrolling="no"
-      frameborder="0"
-    ></iframe>
-  </div>
-
   <footer>Powered by Twitch</footer>
 </body>
 </html>
-
